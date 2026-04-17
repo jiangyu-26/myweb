@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人博客</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- 导航栏 -->
+  <header>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">我的博客</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="about.html">关于我</a></li>
+          <li><a href="contact.html">联系我</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 主要内容 -->
+  <main>
+    <div class="container">
+      <div class="content-wrapper">
+        <!-- 博客文章 -->
+        <div class="posts">
+          <!-- 文章1 -->
+          <article class="post">
+            <div class="post-image">
+              <img
+                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20technology%20blog%20header&image_size=landscape_16_9"
+                alt="技术博客封面">
+            </div>
+            <div class="post-content">
+              <h2 class="post-title"><a href="#">现代前端开发趋势</a></h2>
+              <div class="post-meta">
+                <span class="post-date">2026-04-15</span>
+                <span class="post-category">技术</span>
+              </div>
+              <p class="post-excerpt">随着Web技术的不断发展，前端开发领域也在快速演进。本文将探讨当前前端开发的主要趋势，包括框架选择、性能优化和用户体验设计等方面。</p>
+              <a href="#" class="read-more">阅读更多</a>
+            </div>
+          </article>
+
+          <!-- 文章2 -->
+          <article class="post">
+            <div class="post-image">
+              <img
+                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=minimalist%20lifestyle%20blog%20header&image_size=landscape_16_9"
+                alt="生活方式博客封面">
+            </div>
+            <div class="post-content">
+              <h2 class="post-title"><a href="#">极简主义生活方式</a></h2>
+              <div class="post-meta">
+                <span class="post-date">2026-04-10</span>
+                <span class="post-category">生活</span>
+              </div>
+              <p class="post-excerpt">极简主义不仅仅是一种设计风格，更是一种生活态度。通过减少物质占有，我们可以获得更多的自由和内心平静。本文分享一些实践极简主义的方法和心得。</p>
+              <a href="#" class="read-more">阅读更多</a>
+            </div>
+          </article>
+
+          <!-- 文章3 -->
+          <article class="post">
+            <div class="post-image">
+              <img
+                src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=personal%20growth%20blog%20header&image_size=landscape_16_9"
+                alt="个人成长博客封面">
+            </div>
+            <div class="post-content">
+              <h2 class="post-title"><a href="#">如何培养良好的习惯</a></h2>
+              <div class="post-meta">
+                <span class="post-date">2026-04-05</span>
+                <span class="post-category">成长</span>
+              </div>
+              <p class="post-excerpt">习惯是我们生活的基石，良好的习惯可以帮助我们实现目标，提高生活质量。本文将介绍如何通过科学的方法培养和维持良好的习惯。</p>
+              <a href="#" class="read-more">阅读更多</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+          <!-- 关于我 -->
+          <div class="widget">
+            <h3 class="widget-title">关于我</h3>
+            <div class="about-me">
+              <img src="nailong.jpg" alt="个人头像">
+              <p>你好，我是一名热爱分享的博主，专注于技术、生活和个人成长领域。希望通过我的文章能够给你带来一些启发和帮助。</p>
+            </div>
+          </div>
+
+          <!-- 分类 -->
+          <div class="widget">
+            <h3 class="widget-title">分类</h3>
+            <ul class="category-list">
+              <li><a href="#">技术</a></li>
+              <li><a href="#">生活</a></li>
+              <li><a href="#">成长</a></li>
+              <li><a href="#">旅行</a></li>
+            </ul>
+          </div>
+
+          <!-- 标签云 -->
+          <div class="widget">
+            <h3 class="widget-title">标签</h3>
+            <div class="tag-cloud">
+              <a href="#">前端开发</a>
+              <a href="#">极简主义</a>
+              <a href="#">习惯养成</a>
+              <a href="#">JavaScript</a>
+              <a href="#">生活方式</a>
+              <a href="#">个人成长</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>我的博客</h3>
+          <p>分享技术、生活和成长的个人空间</p>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-weixin"></i></a>
+          <a href="#"><i class="fab fa-weibo"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 我的博客. 保留所有权利.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 脚本 -->
+  <script>
+    // 汉堡菜单切换
+    document.querySelector('.burger').addEventListener('click', function () {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
