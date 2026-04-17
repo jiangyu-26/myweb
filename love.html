@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>致虞思楠 - 表白</title>
+    <link rel="stylesheet" href="/myweb/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .love-content {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin: 2rem 0;
+        }
+
+        .love-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .love-header h2 {
+            font-size: 2rem;
+            color: #e94057;
+            margin-bottom: 1rem;
+        }
+
+        .love-message {
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .love-message p {
+            margin-bottom: 1rem;
+        }
+
+        .heart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3rem 0;
+        }
+
+        .heart-text {
+            font-size: 2rem;
+            color: #e94057;
+            font-weight: bold;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .love-quotes {
+            margin: 3rem 0;
+        }
+
+        .love-quotes h3 {
+            text-align: center;
+            color: #e94057;
+            margin-bottom: 1.5rem;
+        }
+
+        .quote {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-left: 4px solid #e94057;
+            margin-bottom: 1rem;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .quote p {
+            margin-bottom: 0.5rem;
+        }
+
+        .quote-author {
+            text-align: right;
+            font-style: italic;
+            color: #666;
+        }
+
+        .love-gallery {
+            margin: 3rem 0;
+        }
+
+        .love-gallery h3 {
+            text-align: center;
+            color: #e94057;
+            margin-bottom: 1.5rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            height: 200px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-text {
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .love-song {
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .love-song h3 {
+            color: #e94057;
+            margin-bottom: 1.5rem;
+        }
+
+        .song-lyrics {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .lyrics-line {
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        @media screen and (max-width: 768px) {
+            .love-content {
+                padding: 1.5rem;
+            }
+
+            .love-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .heart-text {
+                font-size: 1.5rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .gallery-item {
+                height: 150px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .love-content {
+                padding: 1rem;
+            }
+
+            .love-header h2 {
+                font-size: 1.5rem;
+            }
+
+            .heart-text {
+                font-size: 1.2rem;
+            }
+
+            .quote {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">我的博客</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我</a></li>
+                    <li><a href="love.html">表白</a></li>
+                    <li><a href="contact.html">联系我</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容 -->
+    <main>
+        <div class="container">
+            <div class="love-content">
+                <div class="love-header">
+                    <h2>致虞思楠</h2>
+                    <p>我想对你说的话</p>
+                </div>
+
+                <div class="love-message">
+                    <p>亲爱的虞思楠：</p>
+                    <p>当我第一次见到你的时候，我的心就被你深深吸引了。你的笑容像阳光一样温暖，你的眼睛像星星一样明亮，你的声音像天籁一样动听。从那一刻起，我就知道，你就是我一直在寻找的那个人。</p>
+                    <p>和你在一起的每一刻，都是我最珍贵的回忆。无论是一起看电影、一起逛街、还是一起分享美食，都让我感到无比的幸福。你的一举一动，一颦一笑，都深深印在我的脑海里，成为我每天最美好的期待。</p>
+                    <p>我想告诉你，你在我心中是独一无二的。你的善良、你的温柔、你的聪明、你的可爱，都让我为你着迷。我愿意为你做任何事情，只要能让你开心，让你幸福。</p>
+                    <p>我知道，爱情需要时间来证明，需要彼此的包容和理解。但我相信，只要我们彼此真心相待，我们的爱情一定会像花儿一样绽放，像星星一样永恒。</p>
+                    <p>虞思楠，我爱你！我希望能和你一起走过人生的每一个阶段，一起经历生活的酸甜苦辣，一起创造属于我们的美好回忆。</p>
+                </div>
+
+                <div class="heart-container">
+                    <div class="heart-text">❤️ 虞思楠，我爱你 ❤️</div>
+                </div>
+
+                <div class="love-quotes">
+                    <h3>爱的箴言</h3>
+                    <div class="quote">
+                        <p>你是我生命中最美丽的意外，也是我最想珍惜的人。</p>
+                        <div class="quote-author">—— 致虞思楠</div>
+                    </div>
+                    <div class="quote">
+                        <p>爱不是一时的冲动，而是一生的承诺。我愿意用我的一生来爱你，呵护你。</p>
+                        <div class="quote-author">—— 致虞思楠</div>
+                    </div>
+                    <div class="quote">
+                        <p>在这个世界上，最幸福的事情就是和你在一起，最美好的时光就是和你共度的每一刻。</p>
+                        <div class="quote-author">—— 致虞思楠</div>
+                    </div>
+                </div>
+
+                <div class="love-gallery">
+                    <h3>我们的回忆</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=romantic%20sunset%20date&image_size=square"
+                                alt="浪漫日落">
+                            <div class="gallery-overlay">
+                                <div class="gallery-text">第一次约会</div>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=beautiful%20park%20walk&image_size=square"
+                                alt="公园漫步">
+                            <div class="gallery-overlay">
+                                <div class="gallery-text">公园漫步</div>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cute%20cafe%20date&image_size=square"
+                                alt="咖啡馆约会">
+                            <div class="gallery-overlay">
+                                <div class="gallery-text">咖啡馆时光</div>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=happy%20couple%20travel&image_size=square"
+                                alt="旅行回忆">
+                            <div class="gallery-overlay">
+                                <div class="gallery-text">旅行回忆</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="love-song">
+                    <h3>为你唱的歌</h3>
+                    <div class="song-lyrics">
+                        <div class="lyrics-line">当我遇见你，就像阳光照进心里</div>
+                        <div class="lyrics-line">你的笑容，让我忘记了所有的烦恼</div>
+                        <div class="lyrics-line">每一天，每一夜，我都在想你</div>
+                        <div class="lyrics-line">虞思楠，你是我生命中最美好的存在</div>
+                        <div class="lyrics-line">我爱你，不是一时的冲动</div>
+                        <div class="lyrics-line">而是一生的承诺</div>
+                        <div class="lyrics-line">我会用我的全部，去爱你，呵护你</div>
+                        <div class="lyrics-line">直到永远</div>
+                    </div>
+                </div>
+
+                <div class="heart-container">
+                    <div class="heart-text">❤️ 虞思楠，做我的女朋友吧！ ❤️</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>我的博客</h3>
+                    <p>分享技术、生活和成长的个人空间</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-weixin"></i></a>
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 我的博客. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 脚本 -->
+    <script>
+        // 汉堡菜单切换
+        document.querySelector('.burger').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // 页面加载动画
+        window.addEventListener('load', function () {
+            const elements = document.querySelectorAll('.love-content > div');
+            elements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.style.opacity = '0';
+                    element.style.transform = 'translateY(20px)';
+                    element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    setTimeout(() => {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }, 100);
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+
+</html>
